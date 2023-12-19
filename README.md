@@ -58,13 +58,13 @@ During training there is no loss function. This is due to the fact that the trai
 
 ## 4.1. Logistic Regression
 
-![[Pasted image 20231008184138.png]]
+![Logistic regression confusion matrix](Images/logistic_regression_confusion_matrix.png)
 Confusion matrix of the logistic regression model: true negatives in top left, false positives in top right, false negatives in bottom left and true positives in bottom right
 
 The accuracy score for logistic regression was 69,38%. This is calculated with sk-learn accuracy_score. The data which it was tested on is separate from the data it was trained on. The training data was randomly selected from the entire dataset. The validation error is quite high, over 30%. The classification threshold of the method used for this task (sklearn logistic regression) uses 0.5 as its threshold for choosing the label. This is already quite low which makes the result of this method even less impressive.
 
 ## 4.2. K-Nearest Neighbours
-![[Pasted image 20231008184150.png]]
+![K-nearest neighbours confusion matrix](Images/knn_confusion_matrix.png)
 Confusion matrix of the knn-model: true negatives in top left, false positives in top right, false negatives in bottom left and true positives in bottom right
 
 The accuracy of the knn-model was 97,22% on the same test data. The high accuracy suggest some overfitting that the knn-model is prone to. 
